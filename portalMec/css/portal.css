@@ -1,0 +1,103 @@
+/* line 2, ../sass/portal.scss */
+.jumbotron {
+  height: 250px;
+  background-repeat: no-repeat;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: #DDDDDD;
+}
+/* line 12, ../sass/portal.scss */
+.jumbotron h1 {
+  color: #FFFFFF;
+  text-shadow: 0.1em 0.1em 0.2em black;
+  float: right;
+  right: 20%;
+}
+
+/* line 26, ../sass/portal.scss */
+.search-item {
+  margin-bottom: 5px;
+}
+/* line 29, ../sass/portal.scss */
+.search-item img {
+  width: 180px;
+  height: 180px;
+}
+/* line 34, ../sass/portal.scss */
+.search-item h1 {
+  display: inline;
+}
+/* line 38, ../sass/portal.scss */
+.search-item .search-item-body {
+  height: 140px;
+}
+/* line 42, ../sass/portal.scss */
+.search-item .search-item-buttons {
+  position: relative;
+  float: right;
+  right: 6px;
+}
+/* line 48, ../sass/portal.scss */
+.search-item .search-item-star {
+  position: relative;
+  float: right;
+  right: 6px;
+}
+
+/* line 56, ../sass/portal.scss */
+#typeahead .tt-hint:hover {
+  background-color: #000;
+}
+/* line 60, ../sass/portal.scss */
+#typeahead .tt-query:hover {
+  background-color: #000;
+}
+/* line 64, ../sass/portal.scss */
+#typeahead .tt-menu {
+  width: 422px;
+  margin: 12px 0;
+  padding: 8px 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+/* line 79, ../sass/portal.scss */
+#typeahead .tt-suggestion:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: #0097cf;
+}
+
+/* line 91, ../sass/portal.scss */
+.submenu {
+  position: relative;
+  top: -30px;
+  left: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+/* line 99, ../sass/portal.scss */
+.navbar {
+  margin: 0px;
+}
+
+/* line 104, ../sass/portal.scss */
+footer {
+  margin-top: 40px;
+  height: 100px;
+  background-color: #000000;
+}
