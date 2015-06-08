@@ -11,7 +11,7 @@
 
 
     <div class="container-fluid">
-		<div class="col-sm-2">
+	<div class="col-sm-2">
           <div class="well sidebar-nav">
             <ul class="nav nav-list">
               <li class="nav-header"><a href=""> Imagens </a></li>
@@ -38,7 +38,7 @@
 		<li><a href="#">Planos de Aula</a></li>
             </ul>
           </div><!--/.well -->
-        </div><!--/span-->
+        </div><!--/span 2-->
         <div class="col-sm-10">
 	 <div class="container"><select>
 			<option value="#" selected>Resultados por Página</option>

@@ -7,7 +7,7 @@
   <body>
 
     <?php
-        $G_navbar_name = "Matériaaaaas";
+        $G_navbar_name = "Matérias";
         $G_navbar_image = "images/banner-materias.png";
         include("_navbar.php")
     ?>

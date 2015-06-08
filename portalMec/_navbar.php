@@ -47,7 +47,7 @@
     			<input type="text" class="form-control" placeholder="Busca">
     			</div>
     			<button type="submit" class="btn btn-default">Pesquisar</button></br>
-			<a href="buscaavancada.php">Busca Avançada</a>
+			<a href="buscaavancada1.php">Busca Avançada</a>
     		</form>
 	</nav>
     </div>

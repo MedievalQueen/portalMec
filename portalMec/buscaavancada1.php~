@@ -38,42 +38,110 @@
 			    <td></td>
 			    <td align="right"><br><input type="button" name="" value="Buscar"></td>		
 			  </tr>
-			   <tr>
-			    <td></td>
-			    <td align="right"><br><input type="button" name="" value="Buscar"></td>		
+			</table>
+			<hr>
+			Matérias: <br/>
+			<table style="width:100%">
+			  <tr>
+			    <td><input type="checkbox">Matemática</td>
+			    <td>
+				<select>
+				<option value="disc" selected>Disciplina</option>
+				<option value="#">Álgebra</option>
+				<option value="#">...</option>
+				<option value="#">...</option>
+				</select> +
+			   </td>		
+			  </tr>
+			<tr>
+			    <td><input type="checkbox">Biologia</td>
+			    <td>
+				<select>
+				<option value="disc" selected>Disciplina</option>
+				<option value="#">Plantas</option>
+				<option value="#">...</option>
+				<option value="#">...</option>
+				</select> +
+			   </td>		
+			  </tr>
+			<tr>
+			    <td><input type="checkbox">História</td>
+			    <td>
+				<select>
+				<option value="disc" selected>Disciplina</option>
+				<option value="#">do Brasil</option>
+				<option value="#">...</option>
+				<option value="#">...</option>
+				</select> +
+			   </td>		
+			  </tr>
+			</table>
+			<br><br>
+			<table>
+			  <tr>
+			    <td>
+				<select>
+			  	<option value="materia" selected>Matéria</option>
+			  	<option value="#">Matemática</option>
+			  	<option value="#">...</option>
+			  	<option value="#">...</option>
+			  	</select>
+			    </td>
+			    <td>
+				<select>
+				<option value="disc" selected>Disciplina</option>
+				<option value="#">Álgebra</option>
+				<option value="#">...</option>
+				<option value="#">...</option>
+				</select> 
+			    </td>		
+			  </tr>
+			</table>
+	
+            		 <hr>
+			Ano escolar: <br/>
+			<table style="width:100%">
+			  <tr>
+			    <td><input type="checkbox">1º</td>
+			    <td><input type="checkbox">4º</td>		
+			  </tr>
+			<tr>
+			    <td><input type="checkbox">2º</td>
+			    <td><input type="checkbox">5º</td>		
+			  </tr>
+			<tr>
+			    <td><input type="checkbox">3º</td>
+			    <td><input type="checkbox">6º</td>		
 			  </tr>
 			</table>
 			<hr>
-			  <select>
-			  <option value="materia" selected>Matéria</option>
-			  <option value="#">Matemática</option>
-			  <option value="#">...</option>
-			  <option value="#">...</option>
-			  </select>
-
-             		<hr>
-			<select>
-			<option value="disc" selected>Disciplina</option>
-			<option value="#">Álgebra</option>
-			<option value="#">...</option>
-			<option value="#">...</option>
-			</select> 
-            		 <hr>
-			Ano escolar: <br/>1º<input type="checkbox">4º<input type="checkbox"><br/>2º<input type="checkbox">5º<input type="checkbox"><br/>3º<input type="checkbox">6º<input type="checkbox">
+			Ano de Publicação:<br> 
+			<table style="width:100%">
+			  <tr>
+			    <td><input type="radio" name="ano" value="single" checked>Ano:</td>
+			    <td> <input type="text" name="ano1" size="8"></td>		
+			  </tr>
+ 			  <tr>
+			    <td><input type="radio" name="ano" value="range">Intervalo:</td>
+			    <td> <input type="text" name="ano2" size="8"> - <input type="text" name="ano2" size="8"></td>		
+			  </tr>
+			</table>	 
 			<hr>
-			Ano de Publicação:<br> <input type="radio" name="ano" value="single" checked>Ano: <input type="text" name="ano1" size="5">
-			<br><input type="radio" name="ano" value="range">Intervalo: <input type="text" name="ano2" size="5"> - <input type="text" name="ano2" size="5">
-			<hr>
-			<select>
-			  <option value="conteudo" selected>Conteúdo</option>
-			  <option value="#">Fotos</option>
-			  <option value="#">Imagens</option>
-			  <option value="#">Vídeos</option>
-			  <option value="#">Áudio</option>
-			  <option value="#">Textos</option>
-			</select>  
+			Conteúdo: <br/>
+			<table style="width:100%">
+			  <tr>
+			    <td><input type="checkbox">Fotos</td>
+			    <td><input type="checkbox">Imagens</td>	
+			    <td><input type="checkbox">Vídeos</td>		
+			  </tr>
+			<tr>
+			    <td><input type="checkbox">Áudio</td>
+			    <td><input type="checkbox">Textos</td>		
+			  </tr>
+			</table>
+			
 			<br/><br/>          
-	   		<br/><button type="submit" class="btn btn-default">Pesquisar</button>
+	   		<br/><button align="right" type="submit" class="btn btn-default">Pesquisar</button>
 
 		</div><!--/.well -->
         </div><!--/span col sm-4-->	
