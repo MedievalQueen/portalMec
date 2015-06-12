@@ -14,8 +14,12 @@
 		<div class="col-sm-2">
           <div class="well sidebar-nav">
             <ul class="nav nav-list">
+	      <li class="nav-header">Mídia</li>
               <li class="nav-header"><a href=""> Imagens </a></li>
               <li class="active"><a href="#"> Videos </a></li>
+	      <li><a href="#">Apresentações Multimídia</a></li>
+		<li><a href="#">Áudio</a></li>
+		<li><a href="#">Apps</a></li>
               <hr>
 	      <li class="nav-header">Textos</li>
               <li><a href="#">Anais</a></li>
@@ -29,12 +33,7 @@
 		<li><a href="#">Teses</a></li>
 		<li><a href="#">Todos</a></li>
 		<hr>
-		<li><a href="#">Apresentações Multimídia</a></li>
-		<hr>
-		<li><a href="#">Áudio</a></li>
-		<hr>
-		<li><a href="#">Apps</a></li>
-		<hr>
+		<li class="nav-header">Outros</li>
 		<li><a href="#">Planos de Aula</a></li>
             </ul>
           </div><!--/.well -->

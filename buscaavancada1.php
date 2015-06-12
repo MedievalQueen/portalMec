@@ -2,6 +2,26 @@
 <html lang="en">
   <head>
     <?php include("_header.html") ?>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/select2.full.js"></script>
+    <link href="css/select2.min.css" type="text/css" rel="stylesheet" />
+
+    <script type="text/javascript">
+
+		$.fn.select2.amd.require(
+			["select2/core", "select2/utils", "select2/compat/matcher"],
+			function (Select2, Utils, oldMatcher) {
+		 
+		  var $basicMultiple = $(".js-example-basic-multiple");
+		  var $limitMultiple = $(".js-example-basic-multiple-limit");
+
+		  $basicMultiple.select2();
+		  $basicMultiple.select2({ width: '80%' });
+		  $limitMultiple.select2({
+			maximumSelectionLength: 2
+		  });
+		});
+	</script>
   </head>
 
   <body>
@@ -15,7 +35,7 @@
     <div class="container-fluid">
 	<div class="col-sm-4">
  		<div class="well sidebar-nav">
-			 <h2> <p>Pesquisa Avançada</p></h2>
+			 <h2> <p>Pesquisa Avançada</p></h2>	
 			<hr>
 			<table style="width:100%">
 			  <tr>
@@ -40,66 +60,130 @@
 			  </tr>
 			</table>
 			<hr>
-			Matérias: <br/>
 			<table style="width:100%">
+			  <tr>
+				 <td>Matérias</td><td>Disciplinas</td>
+			  </tr>
+			  <tr>
+				 <td><br/></td><td></td>
+			  </tr>
 			  <tr>
 			    <td><input type="checkbox">Matemática</td>
 			    <td>
-				<select>
-				<option value="disc" selected>Disciplina</option>
-				<option value="#">Álgebra</option>
-				<option value="#">...</option>
-				<option value="#">...</option>
-				</select> +
+				<select class="js-example-basic-multiple" multiple="multiple">
+				  <optgroup label="Básico">
+					<option value="">Conjuntos</option>
+					<option value="">Soma</option>
+				  </optgroup>
+				  <optgroup label="Avançada">
+					<option value="AL">Álgebra</option>
+					<option value="">...</option>
+				  </optgroup>
+				</select>
 			   </td>		
 			  </tr>
 			<tr>
 			    <td><input type="checkbox">Biologia</td>
 			    <td>
-				<select>
-				<option value="disc" selected>Disciplina</option>
-				<option value="#">Plantas</option>
-				<option value="#">...</option>
-				<option value="#">...</option>
-				</select> +
+				<select class="js-example-basic-multiple" multiple="multiple">
+				  <optgroup label="Básico">
+					<option value="">Plantas</option>
+					<option value="">...</option>
+				  </optgroup>
+				  <optgroup label="Avançada">
+					<option value="">...</option>
+				  </optgroup>
+				</select>
 			   </td>		
 			  </tr>
 			<tr>
 			    <td><input type="checkbox">História</td>
 			    <td>
-				<select>
-				<option value="disc" selected>Disciplina</option>
-				<option value="#">do Brasil</option>
-				<option value="#">...</option>
-				<option value="#">...</option>
-				</select> +
+				<select class="js-example-basic-multiple" multiple="multiple">
+				  <optgroup label="Básico">
+					<option value="">História do Brasil</option>
+					<option value="">...</option>
+				  </optgroup>
+				  <optgroup label="Avançada">
+					<option value="">...</option>
+				  </optgroup>
+				</select>
 			   </td>		
 			  </tr>
-			</table>
-			<br><br>
-			<table>
 			  <tr>
+			    <td><input type="checkbox">Língua Portuguesa</td>
 			    <td>
-				<select>
-			  	<option value="materia" selected>Matéria</option>
-			  	<option value="#">Matemática</option>
-			  	<option value="#">...</option>
-			  	<option value="#">...</option>
-			  	</select>
-			    </td>
-			    <td>
-				<select>
-				<option value="disc" selected>Disciplina</option>
-				<option value="#">Álgebra</option>
-				<option value="#">...</option>
-				<option value="#">...</option>
-				</select> 
-			    </td>		
+				<select class="js-example-basic-multiple" multiple="multiple">
+				  <optgroup label="Básico">
+					<option value="">...</option>
+					<option value="">...</option>
+				  </optgroup>
+				  <optgroup label="Avançada">
+					<option value="">...</option>
+				  </optgroup>
+				</select>
+			   </td>		
 			  </tr>
-			</table>
+			  <tr>
+			    <td><input type="checkbox">Geografia</td>
+			    <td>
+				<select class="js-example-basic-multiple" multiple="multiple">
+				  <optgroup label="Básico">
+					<option value="">...</option>
+					<option value="">...</option>
+				  </optgroup>
+				  <optgroup label="Avançada">
+					<option value="">...</option>
+				  </optgroup>
+				</select>
+			   </td>		
+			  </tr>
+			   <tr>
+			    <td><input type="checkbox">Ciências</td>
+			    <td>
+				<select class="js-example-basic-multiple" multiple="multiple">
+				  <optgroup label="Básico">
+					<option value="">...</option>
+					<option value="">...</option>
+				  </optgroup>
+				  <optgroup label="Avançada">
+					<option value="">...</option>
+				  </optgroup>
+				</select>
+			   </td>		
+			  </tr>
+			  <tr>
+			    <td><input type="checkbox">Educação Física</td>
+			    <td>
+				<select class="js-example-basic-multiple" multiple="multiple">
+				  <optgroup label="Básico">
+					<option value="">...</option>
+					<option value="">...</option>
+				  </optgroup>
+				  <optgroup label="Avançada">
+					<option value="">...</option>
+				  </optgroup>
+				</select>
+			   </td>		
+			  </tr>
+			  <tr>
+			    <td><input type="checkbox">Inglês</td>
+			    <td>
+				<select class="js-example-basic-multiple" multiple="multiple">
+				  <optgroup label="Básico">
+					<option value="">...</option>
+					<option value="">...</option>
+				  </optgroup>
+				  <optgroup label="Avançada">
+					<option value="">...</option>
+				  </optgroup>
+				</select>
+			   </td>		
+			  </tr>	  
+			</table>		
 	
             		 <hr>
-			Ano escolar: <br/>
+			Ano escolar: <br/> <br/>
 			<table style="width:100%">
 			  <tr>
 			    <td><input type="checkbox">1º</td>
@@ -115,7 +199,7 @@
 			  </tr>
 			</table>
 			<hr>
-			Ano de Publicação:<br> 
+			Ano de Publicação:<br>  <br/>
 			<table style="width:100%">
 			  <tr>
 			    <td><input type="radio" name="ano" value="single" checked>Ano:</td>
@@ -127,7 +211,7 @@
 			  </tr>
 			</table>	 
 			<hr>
-			Conteúdo: <br/>
+			Conteúdo: <br/> <br/>
 			<table style="width:100%">
 			  <tr>
 			    <td><input type="checkbox">Fotos</td>
@@ -140,8 +224,72 @@
 			  </tr>
 			</table>
 			
-			<br/><br/>          
-	   		<br/><button type="submit" class="btn btn-default">Pesquisar</button>
+			<hr>
+			Conteúdo: <br/> <br/>
+			<table style="width:100%">
+			   <tr>
+			    <td>Mídia </td>
+			    <td></td>	
+			    <td></td>
+			   </tr>
+			  <tr>
+			    <td><input type="checkbox">Fotos</td>
+			    <td><input type="checkbox">Imagens</td>	
+			    <td><input type="checkbox">Vídeos</td>		
+			  </tr>
+			  <tr>
+			    <td><input type="checkbox">Áudio</td>
+			    <td><input type="checkbox">Apresentações Multimídia</td>	
+			    <td><input type="checkbox">Apps</td>		
+			  </tr>
+			<tr>
+			    <td><br/></td>
+			    <td></td>	
+			    <td></td>
+			</tr>
+			<tr>
+			    <td>Textos</td>
+			    <td></td>	
+			    <td></td>
+			   </tr>
+			<tr>
+			    <td><input type="checkbox">Anais</td>
+			    <td><input type="checkbox">Artigos Web</td>	
+			    <td><input type="checkbox">Capítulos de Livros</td>	
+			</tr>
+			<tr>
+			    <td><input type="checkbox">Dissertações</td>
+			    <td><input type="checkbox">Livros</td>	
+			    <td><input type="checkbox">Monografias</td>	
+			</tr>
+			<tr>
+			    <td><input type="checkbox">Periódicos</td>
+			    <td><input type="checkbox">Revistas</td>	
+			    <td><input type="checkbox">Teses</td>	
+			</tr>
+			<tr>
+			    <td><input type="checkbox">Todos</td>	
+			</tr>
+			<tr>
+			    <td><br/></td>
+			    <td></td>	
+			    <td></td>
+			</tr>
+			<tr>
+			    <td>Outros</td>
+			    <td></td>	
+			    <td></td>
+			   </tr>
+			<tr>
+			    <td><input type="checkbox">Planos de Aula</td>
+			</tr>
+			<tr>
+			    <td></td>
+			    <td></td>	
+			    <td><button type="submit" class="btn btn-default">Pesquisar</button></td>
+			   </tr>
+			<tr>
+			</table>
 
 		</div><!--/.well -->
         </div><!--/span col sm-4-->	
@@ -215,10 +363,7 @@
       				</div>
     			</div>
   	   	</div>
-	    </div>
-
-
-			
+	    </div>			
 			<nav>
 			<ul class="pagination">
 				<li>
@@ -242,9 +387,7 @@
 		</div><!-- col-sm-8 -->
 		
 	</div><!-- /container -->
-
-
-
+	
 
     <?php include("_footer.html") ?>
 

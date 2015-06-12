@@ -21,45 +21,57 @@
   right: 20%;
 }
 
-/* line 26, ../sass/portal.scss */
+/* line 24, ../sass/portal.scss */
+.navsearch {
+  height: 200px;
+  background-color: #0b6c1d;
+  background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.4));
+}
+
+/* line 30, ../sass/portal.scss */
+.navsearch .input-group {
+  margin-top: 80px;
+}
+
+/* line 37, ../sass/portal.scss */
 .search-item {
   margin-bottom: 5px;
 }
-/* line 29, ../sass/portal.scss */
+/* line 40, ../sass/portal.scss */
 .search-item img {
   width: 180px;
   height: 180px;
 }
-/* line 34, ../sass/portal.scss */
+/* line 45, ../sass/portal.scss */
 .search-item h1 {
   display: inline;
 }
-/* line 38, ../sass/portal.scss */
+/* line 49, ../sass/portal.scss */
 .search-item .search-item-body {
   height: 140px;
 }
-/* line 42, ../sass/portal.scss */
+/* line 53, ../sass/portal.scss */
 .search-item .search-item-buttons {
   position: relative;
   float: right;
   right: 6px;
 }
-/* line 48, ../sass/portal.scss */
+/* line 59, ../sass/portal.scss */
 .search-item .search-item-star {
   position: relative;
   float: right;
   right: 6px;
 }
 
-/* line 56, ../sass/portal.scss */
+/* line 67, ../sass/portal.scss */
 #typeahead .tt-hint:hover {
   background-color: #000;
 }
-/* line 60, ../sass/portal.scss */
+/* line 71, ../sass/portal.scss */
 #typeahead .tt-query:hover {
   background-color: #000;
 }
-/* line 64, ../sass/portal.scss */
+/* line 75, ../sass/portal.scss */
 #typeahead .tt-menu {
   width: 422px;
   margin: 12px 0;
@@ -74,14 +86,27 @@
   -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
-/* line 79, ../sass/portal.scss */
+/* line 90, ../sass/portal.scss */
 #typeahead .tt-suggestion:hover {
   cursor: pointer;
   color: #fff;
   background-color: #0097cf;
 }
 
-/* line 91, ../sass/portal.scss */
+/* line 99, ../sass/portal.scss */
+.idxitem {
+  margin-top: 16px;
+}
+/* line 102, ../sass/portal.scss */
+.idxitem h1 {
+  font-size: 24px;
+}
+/* line 106, ../sass/portal.scss */
+.idxitem p {
+  text-align: justify;
+}
+
+/* line 115, ../sass/portal.scss */
 .submenu {
   position: relative;
   top: -30px;
@@ -90,14 +115,14 @@
   border: 0px;
 }
 
-/* line 99, ../sass/portal.scss */
+/* line 123, ../sass/portal.scss */
 .navbar {
   margin: 0px;
 }
 
-/* line 104, ../sass/portal.scss */
+/* line 128, ../sass/portal.scss */
 footer {
   margin-top: 40px;
   height: 100px;
-  background-color: #000000;
+  background-color: #0b6c1d;
 }
